@@ -1,9 +1,9 @@
 import { User } from "../model/User.model.js";
 import bcrypt from "bcrypt";
-
+import { createToken } from "../jwt/jwt.js";
 export const addUser = async (req, res) => {
   const password = req.body.password;
-  const { email, surname, name, lastname, age } = req.body;
+  const { email, username, name, surname, age, role } = req.body;
 
   const userEmail = await User.findOne({
     where: {
@@ -14,7 +14,7 @@ export const addUser = async (req, res) => {
   if (!userEmail) {
     const UserSurname = await User.findOne({
       where: {
-        surname,
+        username,
       },
     });
     if (!UserSurname) {
@@ -24,18 +24,19 @@ export const addUser = async (req, res) => {
         } else {
           const newUser = await User.create({
             email,
-            surname,
+            username,
             password: hash,
             name,
-            lastname,
+            surname,
             age,
+            role,
           });
           res.status(200).send(newUser);
         }
       });
     } else {
       res.status(404).json({
-        msg: `el usuario con el surname ${surname} ya esta registrado, por favor intentar con otro surname`,
+        msg: `el usuario con el username ${username} ya esta registrado, por favor intentar con otro username`,
       });
     }
   } else {
@@ -59,7 +60,10 @@ export const loginUser = async (req, res) => {
         res.status(500).json({ msg: "internal server error" });
       } else {
         if (check) {
-          res.status(200).json(user);
+          res.status(200).json({
+            token: createToken(user),
+            user
+          });
         } else {
           res
             .status(500)

@@ -17,7 +17,7 @@ export const User = sequelize.define(
       type: DataTypes.TEXT,
       allowNull: false,
     },
-    surname: {
+    username: {
       type: DataTypes.STRING,
       allowNull: false,
     },
@@ -25,7 +25,7 @@ export const User = sequelize.define(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    lastname: {
+    surname: {
       type: DataTypes.STRING,
       allowNull: false,
     },
@@ -36,6 +36,10 @@ export const User = sequelize.define(
       type: DataTypes.TEXT,
       defaultValue: "null",
     },
+    role: {
+      type: DataTypes.STRING,
+      defaultValue: 'client'
+    }
   },
   {
     timestamps: false,
