@@ -1,0 +1,43 @@
+
+@font-face {
+    font-family: "Qhairo";
+    src: url("Qhairo.otf") format("truetype");
+  }
+
+
+.contenedoroferta{
+    font-weight: 600;
+    font-family: "Qhairo";
+    background-color: rgb(49, 48, 48);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 25px;
+   
+}
+
+.contenido{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+.xc {
+    
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    justify-self: flex-end;
+    
+  }
+
+  .xc button{
+    border: none;
+    color: white;
+    font-size: 20px;
+    background: transparent;
+
+  }
