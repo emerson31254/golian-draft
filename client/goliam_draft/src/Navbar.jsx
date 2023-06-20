@@ -1,3 +1,5 @@
+import { FaRegUser } from "react-icons/fa";
+
 export function Navbar(){
   return(
      <div className="navcontainer">
@@ -7,7 +9,10 @@ export function Navbar(){
       <div className="linksnav">
         <a href="#" className="Catalogo"></a>
       </div>
-     <div className="iconav"></div>
+     <div className="iconav">
+      <FaRegUser></FaRegUser>
+      <uShoppingCart></uShoppingCart>
+     </div>
      </div>
 
   )
