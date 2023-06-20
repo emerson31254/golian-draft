@@ -3,6 +3,7 @@ import "./Oferta.css";
 
 
 export function Oferta(){
+    
 let contenall = document.getElementsByClassName("contenedoroferta");
 function cerrar(){
   contenall.remove()
