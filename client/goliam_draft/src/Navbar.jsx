@@ -1,5 +1,6 @@
-import { FaRegUser, LuShoppingCart } from "react-icons/fa";
-
+import { LuShoppingCart } from 'react-icons/lu'
+import { FaRegUser } from 'react-icons/fa';
+import "./Navbar.css"
 
 
 export function Navbar(){
@@ -11,13 +12,11 @@ export function Navbar(){
       <div className="linksnav">
         <a href="#" className="Catalogo">Catalogo</a>
       </div>
-     <div className="iconav">
-      <FaRegUser></FaRegUser>
-      <LuShoppingCart></LuShoppingCart>
-      
-      
-     
-     </div>
+      <div className="iconav">
+  <FaRegUser style={{ margin: '10px' }} />
+  <LuShoppingCart style={{ margin: '10px' }} />
+</div>
+
      </div>
 
   )
