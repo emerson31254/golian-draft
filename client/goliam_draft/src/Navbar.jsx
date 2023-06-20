@@ -1,4 +1,6 @@
-import { FaRegUser } from "react-icons/fa";
+import { FaRegUser, LuShoppingCart } from "react-icons/fa";
+
+
 
 export function Navbar(){
   return(
@@ -7,11 +9,14 @@ export function Navbar(){
         <p>GOLIAM</p>
       </div>
       <div className="linksnav">
-        <a href="#" className="Catalogo"></a>
+        <a href="#" className="Catalogo">Catalogo</a>
       </div>
      <div className="iconav">
       <FaRegUser></FaRegUser>
-      <uShoppingCart></uShoppingCart>
+      <LuShoppingCart></LuShoppingCart>
+      
+      
+     
      </div>
      </div>
 

@@ -4,14 +4,16 @@ export {Oferta} from "./Oferta.jsx";
 
 import { Navbar } from "./Navbar";
 export {Navbar} from "./Navbar.jsx";
-import { FaRegUser  , LuShoppingCart } from "react-icons/fa";
+import { FaRegUser} from "react-icons/fa";
+
 function App() {
   return (
   
     <div className="App">
-      <Oferta></Oferta>;
-      <FaRegUser></FaRegUser>
-      <uShoppingCart></uShoppingCart>
+      <Oferta></Oferta>
+      <Navbar></Navbar>
+      
+      
 
     </div>
   );
