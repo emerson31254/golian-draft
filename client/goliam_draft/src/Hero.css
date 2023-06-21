@@ -1,0 +1,47 @@
+
+
+
+.herocontainer{
+
+background-repeat: no-repeat; 
+background-size: cover;
+background-color: rgb(196, 192, 192);
+display: flex;
+height: 500px;
+width: 100%;
+ justify-content: center;
+ align-items: center;
+}
+
+.herocontainer h1{
+color: rgb(151, 67, 67);
+ font-size: 40px;
+}
+
+
+
+
+.ticont{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+ .ticont button{
+    border: 2.5px rgb(151, 142, 142) solid;
+    color: black;
+    padding: 6px;
+    font-size: 25px;
+    margin-top: 10px;
+    background: transparent;
+    align-items: center;
+}
+
+.ticont button:hover{
+    transition: all ease-in-out 0.2s;
+    color: rgb(133, 119, 119);
+    border: rgb(255, 255, 255) 2.5px solid;
+    
+}
+

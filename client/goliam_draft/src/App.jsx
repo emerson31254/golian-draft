@@ -4,7 +4,12 @@ export {Oferta} from "./Oferta.jsx";
 
 import { Navbar } from "./Navbar";
 export {Navbar} from "./Navbar.jsx";
-import { FaRegUser} from "react-icons/fa";
+
+import { Hero } from "./Hero";
+export {Hero} from "./Hero.jsx";
+
+
+
 
 function App() {
   return (
@@ -12,6 +17,8 @@ function App() {
     <div className="App">
       <Oferta></Oferta>
       <Navbar></Navbar>
+      <Hero></Hero>
+      
       
       
 
